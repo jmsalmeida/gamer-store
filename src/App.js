@@ -19,25 +19,27 @@ class App extends Component {
       <div className="App">
         <Header />
         <Banner />
-        <div className="produtos">
-          <h2>produtos</h2>
-          <div>
-            <Produto imagem={pc} preco="1.999,00" descricao={desc}/>
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+        <div className="container">
+          <div className="produtos">
+            <h2>produtos</h2>
+            <div>
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+            </div>
+            <h2>produtos</h2>
+            <div>
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+              <Produto imagem={pc} preco="1.999,00" descricao={desc} />
+            </div>
           </div>
-          <h2>produtos</h2>
-          <div>
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-            <Produto imagem={pc} preco="1.999,00" descricao={desc} />
-          </div>
+          <Mapa mapa={this.mapa}/>
         </div>
-        {/* <Mapa mapa={this.mapa}/> */}
       </div>
     );
   }
