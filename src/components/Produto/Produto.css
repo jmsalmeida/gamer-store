@@ -1,0 +1,49 @@
+.produto {
+    padding: 20px;
+    width: 20%;
+}
+.produto div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.produto div img {
+    width: 150px;
+}
+
+strong {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+p {
+    margin: 10px 25px;
+    color: rgb(92, 92, 92);
+    font-size: 12px;
+    text-align: center;
+}
+
+.btns {
+    padding: 10px;
+    
+}
+
+.btns input{
+    padding: 5px;
+    
+}
+
+.btns button {
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    background-color: #FFB000; 
+}
+
+.border {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
