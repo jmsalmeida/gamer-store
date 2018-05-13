@@ -7,6 +7,7 @@ import Banner from './components/Banner/Banner';
 import Produto from './components/Produto/Produto';
 // Images
 import pc from './images/pc-gamer1.png'
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   componentWillMount() {
@@ -40,6 +41,7 @@ class App extends Component {
           </div>
           <Mapa mapa={this.mapa}/>
         </div>
+        <Footer/>
       </div>
     );
   }

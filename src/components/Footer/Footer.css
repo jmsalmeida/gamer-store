@@ -1,0 +1,25 @@
+.footer {
+    background-color: #FFB000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.footer img {
+    width: 150px;
+    padding: 10px 0;
+}
+
+.footer > div {
+    width: calc(100% - 100px);
+    border-top: 1px solid white;
+    padding: 10px 0;
+}
+
+.footer > div p {
+    color: white;
+    font-size: 16px;
+}
