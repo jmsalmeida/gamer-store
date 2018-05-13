@@ -9,7 +9,7 @@ class Produto extends Component {
         return (
             <div className="produto">
                 <div>
-                    <img src={imagem} />
+                    <img src={imagem} alt="produto"/>
                     <strong>R$ {preco}</strong>
                     <p>{descricao}</p>
                     <div className="btns">
