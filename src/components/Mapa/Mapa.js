@@ -8,7 +8,7 @@ class Mapa extends Component {
 
     converteURL = () => {
         let urlChange = this.props.mapa.origin;
-        for (letra of urlChange){
+        for (let letra of urlChange){
             if(letra === " "){
                 letra += "+";    
             }
