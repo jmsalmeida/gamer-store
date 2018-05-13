@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Mapa from './components/Mapa/Mapa';
 import Header from './components/Header/Header';
@@ -11,6 +10,7 @@ import Footer from './components/Footer/Footer';
 
 class App extends Component {
   componentWillMount() {
+    this.endereco = {endereco: false}
     this.mapa = {};
   }
 

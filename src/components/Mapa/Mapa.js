@@ -4,9 +4,14 @@ import './Mapa.css';
 class Mapa extends Component {
     aoDigitar = (event) => {
         this.props.mapa.origin = event.target.value;
-        console.log(this.props);
+        // console.log(this.props);
     }
 
+    aoClicar = () => {
+        let endereco = this.props.mapa.origin;
+        console.log(endereco);
+    }
+    
     converteURL = () => {
         let urlChange = this.props.mapa.origin;
         for (let letra of urlChange) {
@@ -23,7 +28,7 @@ class Mapa extends Component {
                 <div>
                     <h3>Digite seu endereço e saiba o melhor caminho até nossa loja!</h3>
                     <input type={Text} placeholder="Endereço" onChange={this.aoDigitar} />
-                    <button>TRAÇAR ROTA</button>
+                    <button onClick={this.aoClicar}>TRAÇAR ROTA</button>
                 </div>
                 <div>
                     <iframe
