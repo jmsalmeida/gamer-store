@@ -2,19 +2,37 @@ import React, { Component } from 'react';
 import './Mapa.css';
 
 class Mapa extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {url: props.url}
+    }
+
     aoDigitar = (event) => {
         this.props.mapa.origin = event.target.value;
         // console.log(this.props);
     }
 
+    alteraURL = () => {
+        this.setState({ url: this.state.url });
+
+        // let rota = `https://www.google.com/maps/embed/v1/directions?key=AIzaSyCudc77iZfKUdVmfNyt8OunMXJh659fCJA&origin=Oslo+Norway
+        // &destination=Telemark+Norway&avoid=tolls|highways`;
+        
+        if (this.props.mapa.origin !== undefined){
+            this.state.url = `https://www.google.com/maps/embed/v1/directions?key=AIzaSyCudc77iZfKUdVmfNyt8OunMXJh659fCJA&origin=Oslo+Norway&destination=Telemark+Norway&avoid=tolls|highways`;
+            console.log(this.state.url);
+        } else {
+            console.log(this.state.url);
+        }
+    }
+
     aoClicar = () => {
         let endereco = this.props.mapa.origin;
-        console.log(endereco);
+        this.alteraURL()
     }
-    
-    converteURL = () => {
-        let urlChange = this.props.mapa.origin;
-        for (let letra of urlChange) {
+
+    converteURL = (endereco) => {
+        for (let letra of endereco) {
             if (letra === " ") {
                 letra += "+";
             }
@@ -36,7 +54,8 @@ class Mapa extends Component {
                         height="450"
                         frameborder="0"
                         style={{ border: 0 }}
-                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ0bVo5shZzpQRSdcxxmsfbEI&key=AIzaSyCudc77iZfKUdVmfNyt8OunMXJh659fCJA"
+                        // src={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyCudc77iZfKUdVmfNyt8OunMXJh659fCJA&origin=Oslo+Norway&destination=Telemark+Norway&avoid=tolls|highways`}
+                        src={this.props.url}
                         allowfullscreen>
                     </iframe>
                     

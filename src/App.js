@@ -16,6 +16,9 @@ class App extends Component {
 
   render() {
     let desc = "PC G-FIRE AMD A4 7300 8GB 1TB Radeon HD8470D 2GB Integrada Computador Gamer Hermes V GKH HTG-96";
+
+    let local = `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ0bVo5shZzpQRSdcxxmsfbEI&key=AIzaSyCudc77iZfKUdVmfNyt8OunMXJh659fCJA`;
+    let rota = `https://www.google.com/maps/embed/v1/directions?key=AIzaSyCudc77iZfKUdVmfNyt8OunMXJh659fCJA&origin=Oslo+Norway&destination=Telemark+Norway&avoid=tolls|highways`;
     return (
       <div className="App">
         <Header />
@@ -39,7 +42,7 @@ class App extends Component {
               <Produto imagem={pc} preco="1.999,00" descricao={desc} />
             </div>
           </div>
-          <Mapa mapa={this.mapa}/>
+          <Mapa mapa={this.mapa} url={local}/>
         </div>
         <Footer/>
       </div>
