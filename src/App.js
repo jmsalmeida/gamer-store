@@ -44,7 +44,7 @@ class App extends Component {
               <Produto imagem={pc} preco="1.999,00" descricao={desc} />
             </div>
           </div>
-          <Mapa mapa={this.mapa} url={localURL} />
+          <Mapa url={localURL}/>
         </div>
         <Footer />
       </div>
