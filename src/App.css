@@ -4,6 +4,7 @@
 
 .produtos div {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .produtos h2 {
@@ -11,3 +12,4 @@
   text-transform: uppercase;
   margin: 40px 0;
 }
+

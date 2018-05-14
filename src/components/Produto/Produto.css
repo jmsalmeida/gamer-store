@@ -2,6 +2,7 @@
     padding: 20px;
     width: 20%;
 }
+
 .produto div {
     display: flex;
     flex-direction: column;
@@ -46,4 +47,21 @@ p {
 .border {
     border-radius: 2px;
     border: 1px solid #ccc;
+}
+
+
+@media screen and (max-width: 520px){
+    .produto{
+        width: 100%;
+    }
+
+    .produto div {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .produto{
+        width: 30%;
+    }
 }

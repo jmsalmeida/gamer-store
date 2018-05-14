@@ -51,12 +51,7 @@ class Mapa extends Component {
                     <button onClick={this.aoClicar}>TRAÇAR ROTA</button>
                 </div>
                 <div>
-                    <iframe
-                        width="600"
-                        height="450"
-                        title="mapa"
-                        style={{ border: 0 }}
-                        src={this.props.url}>
+                    <iframe title="mapa" src={this.props.url}>
                     </iframe>  
                 </div>
             </div>
